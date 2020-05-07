@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Classic Agency</title>
+    <title>Frutería Lupita</title>
     <link rel="icon" href="img/fl_logo.png">
 
     <!-- Bootstrap core CSS -->
@@ -26,13 +26,33 @@
     <link href="css/creative.min.css" rel="stylesheet">
 
     <style>
-     #map {
-       width: 100%;
-       height: 400px;
-       background-color: grey;
-     }
-    </style>
+    .parallax {
+      /* The image used */
+      background-image: url("img/parallax_img.png");
 
+      /* Set a specific height */
+      min-height: 500px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2 {
+      /* The image used */
+      background-image: url("img/parallax2_img.png");
+
+      /* Set a specific height */
+      min-height: 500px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    </style>
   </head>
 
   <body id="page-top">
@@ -41,7 +61,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="padding-top:0px;padding-bottom:0px;">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <img src="img/fl_logo.png" alt="fl_logo" style="width:50px;"  class="rounded-circle bg-white">
+            <img src="img/fl_logo.png" alt="fl_logo" style="width:50px;" class="rounded-circle bg-white">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -55,28 +75,30 @@
               <a class="nav-link js-scroll-trigger" href="#services">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Productos</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contactanos</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Productos</a>
+            </li> -->
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- Header -->
     <header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
+            <!-- <h1 class="text-uppercase">
               <strong>Frutería Lupita</strong>
-            </h1>
+            </h1> -->
+            <img src="img/fl_logo.png" alt="fl_logo" style="width:21vw;"  class="rounded-circle bg-white">
             <hr>
           </div>
           <div class="col-lg-8 mx-auto">
-            <p class="mb-5">Frutas y Verduras de primera calidad</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Conocenos</a>
+            <h4 class="mb-5">Frutas y Verduras de 1ª calidad</h4>
+            <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Frutas y Verduras de 1ª calidad</a> -->
           </div>
         </div>
       </div>
@@ -88,14 +110,55 @@
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading text-white">Conocenos y convencete</h2>
             <hr class="light my-4">
-            <p class="text-faded mb-4">
-                Contamos con la mejor calidad de productos y ofrecemos el mejor servicio.
-            </p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+            <h5 class="text-faded mb-3">
+                Contamos con la mejor calidad y frescura en Frutas y Verduras.
+            </h5>
+            <h5 class="text-faded mb-3">
+                Ofrecemos la mejor atención y servicio especial a cada cliente.
+            </h5>
+            <h5 class="text-faded mb-3">
+                Ven y sientete especial con nosotros.
+            </h5>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="container-fluid p-0">
+      <div class="row no-gutters popup-gallery">
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/7.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/7.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/8.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/8.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/9.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/9.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
 
     <section id="services">
       <div class="container">
@@ -140,109 +203,46 @@
       </div>
     </section>
 
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Título
-                  </div>
-                  <div class="project-name">
-                    Descripción
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Título
-                  </div>
-                  <div class="project-name">
-                    Descripción
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Título
-                  </div>
-                  <div class="project-name">
-                    Descripción
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Título
-                  </div>
-                  <div class="project-name">
-                    Descripción
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Título
-                  </div>
-                  <div class="project-name">
-                    Descripción
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Título
-                  </div>
-                  <div class="project-name">
-                    Descripción
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters popup-gallery">
+        <div class="col-lg-3 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/10.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/10.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/11.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/11.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/12.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/12.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/13.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/13.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+          </a>
         </div>
       </div>
-    </section>
-
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Somos tu mejor opción!</h2>
-        <a class="btn btn-light btn-xl sr-button  js-scroll-trigger" href="#contact">Contactanos!</a>
-      </div>
-    </section>
+    </div>
 
     <section id="contact">
       <div class="container">
@@ -272,12 +272,62 @@
           <div class="col-lg-4 mr-auto text-center">
             <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
             <p>
-              <a href="mailto:susan_semfls@hotmail.com">susan_semfls@hotmail.com</a> <br>
+              <!-- <a href="mailto:susan_semfls@hotmail.com">susan_semfls@hotmail.com</a> <br> -->
               <a href="mailto:susanamartinez32@gmail.com">susanamartinez32@gmail.com</a> <br>
               <a href="mailto:joseluismtzmts@hotmail.com">joseluismtzmts@hotmail.com</a>
             </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-3 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/14.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/14.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/15.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/15.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/16.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/16.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/17.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/17.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/18.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/18.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/19.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/19.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/20.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/20.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-5">Somos tu mejor opción!</h2>
+        <a class="btn btn-light btn-xl sr-button  js-scroll-trigger" href="#contact">Contactanos!</a>
       </div>
     </section>
 
